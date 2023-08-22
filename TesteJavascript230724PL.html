@@ -1,0 +1,62 @@
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Aula LP 24/07</title>
+    </head>
+    <body>
+<script lang="JavaScript">
+    // As variáveis sempre são geradas por natureza em String // 
+    // Os comandos em JavaScript são todos iguais ao do c#//
+    var oi, LittlePopCorn;
+    oi = "Dá só um liga";
+    document.write(oi + "<br>");
+    document.write("gay<br>");
+    document.writeln("Olá<br>");
+    document.write("<br>");
+    LittlePopCorn = window.prompt("Quem é você?","Nome não informado");
+    document.write("Olá " + LittlePopCorn);
+    
+</script>
+
+<script lang="JavaScript">
+    // essas variáveis são ambas String//
+ var n1, n2, resultado;
+ n1 = window.prompt("Informe o 1° Número:");
+ n2 = window.prompt("Informe o 2° Número:");
+
+ // o "parseFloat" converte os dois valores de string para float e gera duas novas variáveis float// 
+ //Comando "parse******" equivale ao "Convert" utilizado no C# e pode converter em String, Int, Double, Float e etc//
+n1f = parseFloat(n1);
+n2f = parseFloat(n2);
+
+ resultado = n1f + n2f
+ document.write("soma dos números equivale a: " + resultado + "<br>");      
+</script>
+
+<script lang="JavaScript">
+   //Ou também você ao invés de declarar uma variável para tais valoras você pode atribuir de forma direta que nem no C#//
+ var n1, n2, resultado;
+
+
+n1 = parseFloat(window.prompt("Informe o 2° Número:"));
+n2 = parseFloat(window.prompt("Informe o 1° Número:"));
+
+ resultado = n1 + n2
+ document.write("soma dos números equivale a: " + resultado + "<br>");      
+</script>
+
+<script lang="JavaScript">
+    //Caso o Usuário não escreva nada você pode colocar uma resposta pré definida (default) que irá preencher automáticamente o Espaço com o conteúdo prédefinido utilizando "," e colocando o conteúdo logo em seguida//
+ var n1, n2, resultado;
+
+n1 = parseFloat(window.prompt("Informe o 2° Número:", "0"));
+n2 = parseFloat(window.prompt("Informe o 1° Número:", "0"));
+
+ resultado = n1 + n2
+ document.write("soma dos números equivale a: " + resultado + "<br>");
+ 
+ // Podem também ser usados comandos como "For" e "do"/"While" e etc para as mesmas finalidades dentro do JavaScript//
+</script>
+
+    </body>
+</html>
